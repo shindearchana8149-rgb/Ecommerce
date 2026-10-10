@@ -1,0 +1,2 @@
+<h1>My Store</h1>
+{% for p in products %}<div><a href="/product/{{p.id}}/">{{p.name}}</a> - ₹{{p.price}}</div>{% empty %}No products.{% endfor %}
